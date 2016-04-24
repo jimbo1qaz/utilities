@@ -1,0 +1,6 @@
+# tar -xvf $*
+for file in "$@"
+do
+    mkdir "${file}.f"
+    7z x -o"${file}.f" "$file"
+done
