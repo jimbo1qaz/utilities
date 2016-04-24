@@ -1,0 +1,3 @@
+#!/bin/bash
+
+if [[ -x "$@" && ! -d "$@" ]]; then "`readlink -f $@`"; else xdg-open "$@"; fi
